@@ -25,7 +25,7 @@
         <!--Welcome-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController title="Welcome" id="BYZ-38-t0r" customClass="ViewController" customModule="rest_trip" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Welcome" id="BYZ-38-t0r" customClass="menuViewController" customModule="rest_trip" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -80,7 +80,7 @@
         <!--appartments-->
         <scene sceneID="7wj-ce-rAm">
             <objects>
-                <viewController title="appartments" id="eSy-84-5Ac" sceneMemberID="viewController">
+                <viewController title="appartments" id="eSy-84-5Ac" customClass="appartmentsViewController" customModule="rest_trip" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="sVR-TN-VCF"/>
                         <viewControllerLayoutGuide type="bottom" id="Od4-7W-Fho"/>
@@ -105,7 +105,7 @@
         <!--appartmentDetail-->
         <scene sceneID="gzO-41-lfp">
             <objects>
-                <viewController title="appartmentDetail" id="4Iz-YW-RGg" sceneMemberID="viewController">
+                <viewController title="appartmentDetail" id="4Iz-YW-RGg" customClass="appartmentDetailsViewController" customModule="rest_trip" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="6nx-cP-p0g"/>
                         <viewControllerLayoutGuide type="bottom" id="peQ-r5-H6h"/>
@@ -119,7 +119,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hP9-uw-JZ2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1203" y="305"/>
+            <point key="canvasLocation" x="1339" y="305"/>
         </scene>
     </scenes>
 </document>

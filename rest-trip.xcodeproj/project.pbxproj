@@ -14,6 +14,9 @@
 		69A2BA561D4F438D007E463B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 69A2BA541D4F438D007E463B /* LaunchScreen.storyboard */; };
 		69A2BA611D4F438D007E463B /* rest_tripTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69A2BA601D4F438D007E463B /* rest_tripTests.swift */; };
 		69A2BA6C1D4F438D007E463B /* rest_tripUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69A2BA6B1D4F438D007E463B /* rest_tripUITests.swift */; };
+		69A2BA7A1D4F64FA007E463B /* menuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69A2BA791D4F64FA007E463B /* menuViewController.swift */; };
+		69A2BA7C1D4F6538007E463B /* appartmentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69A2BA7B1D4F6538007E463B /* appartmentsViewController.swift */; };
+		69A2BA7E1D4F6568007E463B /* appartmentDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69A2BA7D1D4F6568007E463B /* appartmentDetailsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +50,9 @@
 		69A2BA671D4F438D007E463B /* rest-tripUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "rest-tripUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		69A2BA6B1D4F438D007E463B /* rest_tripUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = rest_tripUITests.swift; sourceTree = "<group>"; };
 		69A2BA6D1D4F438D007E463B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		69A2BA791D4F64FA007E463B /* menuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = menuViewController.swift; sourceTree = "<group>"; };
+		69A2BA7B1D4F6538007E463B /* appartmentsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = appartmentsViewController.swift; sourceTree = "<group>"; };
+		69A2BA7D1D4F6568007E463B /* appartmentDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = appartmentDetailsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +109,9 @@
 				69A2BA521D4F438D007E463B /* Assets.xcassets */,
 				69A2BA541D4F438D007E463B /* LaunchScreen.storyboard */,
 				69A2BA571D4F438D007E463B /* Info.plist */,
+				69A2BA791D4F64FA007E463B /* menuViewController.swift */,
+				69A2BA7B1D4F6538007E463B /* appartmentsViewController.swift */,
+				69A2BA7D1D4F6568007E463B /* appartmentDetailsViewController.swift */,
 			);
 			path = "rest-trip";
 			sourceTree = "<group>";
@@ -256,6 +265,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				69A2BA7C1D4F6538007E463B /* appartmentsViewController.swift in Sources */,
+				69A2BA7A1D4F64FA007E463B /* menuViewController.swift in Sources */,
+				69A2BA7E1D4F6568007E463B /* appartmentDetailsViewController.swift in Sources */,
 				69A2BA4E1D4F438D007E463B /* ViewController.swift in Sources */,
 				69A2BA4C1D4F438D007E463B /* AppDelegate.swift in Sources */,
 			);
