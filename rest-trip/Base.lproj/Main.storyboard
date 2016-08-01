@@ -42,8 +42,8 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ylH-Uf-t4p">
-                                <rect key="frame" x="170" y="157" width="75" height="30"/>
-                                <state key="normal" title="Show cites"/>
+                                <rect key="frame" x="142" y="155" width="131" height="30"/>
+                                <state key="normal" title="Show appartments"/>
                                 <connections>
                                     <segue destination="eSy-84-5Ac" kind="show" id="sFx-ht-tCw"/>
                                 </connections>
