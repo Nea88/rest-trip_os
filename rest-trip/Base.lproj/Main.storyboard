@@ -93,15 +93,15 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="appartmentItemCell" rowHeight="57" id="Kav-CS-Rrp">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="appartmentItemCell" rowHeight="57" id="Kav-CS-Rrp" customClass="appartmentTableViewCell" customModule="rest_trip" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="92" width="414" height="57"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Kav-CS-Rrp" id="R1u-Yc-r0w">
-                                            <rect key="frame" x="0.0" y="0.0" width="381" height="56"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Adress" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WXc-RV-goa">
-                                                    <rect key="frame" x="23" y="11" width="72" height="21"/>
+                                                    <rect key="frame" x="23" y="11" width="197" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <nil key="highlightedColor"/>
@@ -110,7 +110,7 @@
                                                     <rect key="frame" x="314" y="0.0" width="59" height="48"/>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Price" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pw6-fi-uiG">
-                                                    <rect key="frame" x="228" y="11" width="42" height="21"/>
+                                                    <rect key="frame" x="228" y="11" width="78" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <nil key="highlightedColor"/>
@@ -118,7 +118,9 @@
                                             </subviews>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <segue destination="4Iz-YW-RGg" kind="showDetail" id="4Ob-lG-Z8V"/>
+                                            <outlet property="imageAppartment" destination="zkl-3g-CkG" id="epq-6K-Snh"/>
+                                            <outlet property="labelAdress" destination="WXc-RV-goa" id="hzc-mc-Om8"/>
+                                            <outlet property="labelPrice" destination="Pw6-fi-uiG" id="Od5-6W-gBP"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -129,6 +131,7 @@
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
                     <connections>
                         <outlet property="appartmentItems" destination="rYy-3H-Vyc" id="6sO-LT-V5i"/>
+                        <segue destination="4Iz-YW-RGg" kind="show" identifier="appartmentToDetails" id="6up-9G-YPc"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Wkb-rG-anP" userLabel="First Responder" sceneMemberID="firstResponder"/>

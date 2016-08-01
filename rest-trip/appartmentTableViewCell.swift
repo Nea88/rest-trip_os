@@ -10,6 +10,10 @@ import UIKit
 
 class appartmentTableViewCell: UITableViewCell {
 
+    @IBOutlet weak var labelAdress: UILabel!
+    @IBOutlet weak var labelPrice: UILabel!
+    @IBOutlet weak var imageAppartment: UIImageView!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
