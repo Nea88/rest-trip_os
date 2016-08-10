@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		690C608F1D50ACF00090E471 /* URLConnectionHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 690C608E1D50ACF00090E471 /* URLConnectionHelper.swift */; };
+		690C60911D50B6760090E471 /* rest-trip-api.swift in Sources */ = {isa = PBXBuildFile; fileRef = 690C60901D50B6760090E471 /* rest-trip-api.swift */; };
 		69A2BA4C1D4F438D007E463B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69A2BA4B1D4F438D007E463B /* AppDelegate.swift */; };
 		69A2BA4E1D4F438D007E463B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69A2BA4D1D4F438D007E463B /* ViewController.swift */; };
 		69A2BA531D4F438D007E463B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 69A2BA521D4F438D007E463B /* Assets.xcassets */; };
@@ -18,6 +20,12 @@
 		69A2BA7E1D4F6568007E463B /* appartmentDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69A2BA7D1D4F6568007E463B /* appartmentDetailsViewController.swift */; };
 		69A2BA811D4F6BD1007E463B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 69A2BA7F1D4F6BD1007E463B /* Main.storyboard */; };
 		69A2BA831D4F6DF4007E463B /* appartmentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69A2BA821D4F6DF4007E463B /* appartmentTableViewCell.swift */; };
+		69A2BA861D4FAB87007E463B /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 69A2BA841D4FAB87007E463B /* Model.xcdatamodeld */; };
+		69A2BA8B1D4FB94F007E463B /* Cities+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69A2BA871D4FB94F007E463B /* Cities+CoreDataProperties.swift */; };
+		69A2BA8C1D4FB94F007E463B /* Cities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69A2BA881D4FB94F007E463B /* Cities.swift */; };
+		69A2BA8D1D4FB94F007E463B /* Appartment+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69A2BA891D4FB94F007E463B /* Appartment+CoreDataProperties.swift */; };
+		69A2BA8E1D4FB94F007E463B /* Appartment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69A2BA8A1D4FB94F007E463B /* Appartment.swift */; };
+		69A2BA911D4FBA0B007E463B /* CoreDataHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69A2BA901D4FBA0B007E463B /* CoreDataHelper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +46,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		690C608E1D50ACF00090E471 /* URLConnectionHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLConnectionHelper.swift; sourceTree = "<group>"; };
+		690C60901D50B6760090E471 /* rest-trip-api.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "rest-trip-api.swift"; sourceTree = "<group>"; };
 		69A2BA481D4F438D007E463B /* rest-trip.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "rest-trip.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		69A2BA4B1D4F438D007E463B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		69A2BA4D1D4F438D007E463B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -55,6 +65,12 @@
 		69A2BA7D1D4F6568007E463B /* appartmentDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = appartmentDetailsViewController.swift; sourceTree = "<group>"; };
 		69A2BA801D4F6BD1007E463B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		69A2BA821D4F6DF4007E463B /* appartmentTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = appartmentTableViewCell.swift; sourceTree = "<group>"; };
+		69A2BA851D4FAB87007E463B /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		69A2BA871D4FB94F007E463B /* Cities+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Cities+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		69A2BA881D4FB94F007E463B /* Cities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cities.swift; sourceTree = "<group>"; };
+		69A2BA891D4FB94F007E463B /* Appartment+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Appartment+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		69A2BA8A1D4FB94F007E463B /* Appartment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Appartment.swift; sourceTree = "<group>"; };
+		69A2BA901D4FBA0B007E463B /* CoreDataHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataHelper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,12 +101,16 @@
 		69A2BA3F1D4F438D007E463B = {
 			isa = PBXGroup;
 			children = (
+				690C60901D50B6760090E471 /* rest-trip-api.swift */,
+				690C608E1D50ACF00090E471 /* URLConnectionHelper.swift */,
+				69A2BA8F1D4FB970007E463B /* CoreDataClasses */,
 				69A2BA4A1D4F438D007E463B /* rest-trip */,
 				69A2BA5F1D4F438D007E463B /* rest-tripTests */,
 				69A2BA6A1D4F438D007E463B /* rest-tripUITests */,
 				69A2BA491D4F438D007E463B /* Products */,
 			);
 			sourceTree = "<group>";
+			usesTabs = 0;
 		};
 		69A2BA491D4F438D007E463B /* Products */ = {
 			isa = PBXGroup;
@@ -115,6 +135,7 @@
 				69A2BA7B1D4F6538007E463B /* appartmentsViewController.swift */,
 				69A2BA7D1D4F6568007E463B /* appartmentDetailsViewController.swift */,
 				69A2BA821D4F6DF4007E463B /* appartmentTableViewCell.swift */,
+				69A2BA841D4FAB87007E463B /* Model.xcdatamodeld */,
 			);
 			path = "rest-trip";
 			sourceTree = "<group>";
@@ -135,6 +156,18 @@
 				69A2BA6D1D4F438D007E463B /* Info.plist */,
 			);
 			path = "rest-tripUITests";
+			sourceTree = "<group>";
+		};
+		69A2BA8F1D4FB970007E463B /* CoreDataClasses */ = {
+			isa = PBXGroup;
+			children = (
+				69A2BA871D4FB94F007E463B /* Cities+CoreDataProperties.swift */,
+				69A2BA881D4FB94F007E463B /* Cities.swift */,
+				69A2BA891D4FB94F007E463B /* Appartment+CoreDataProperties.swift */,
+				69A2BA8A1D4FB94F007E463B /* Appartment.swift */,
+				69A2BA901D4FBA0B007E463B /* CoreDataHelper.swift */,
+			);
+			name = CoreDataClasses;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -268,11 +301,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				690C608F1D50ACF00090E471 /* URLConnectionHelper.swift in Sources */,
+				690C60911D50B6760090E471 /* rest-trip-api.swift in Sources */,
 				69A2BA7C1D4F6538007E463B /* appartmentsViewController.swift in Sources */,
 				69A2BA7A1D4F64FA007E463B /* menuViewController.swift in Sources */,
+				69A2BA8E1D4FB94F007E463B /* Appartment.swift in Sources */,
 				69A2BA7E1D4F6568007E463B /* appartmentDetailsViewController.swift in Sources */,
+				69A2BA8D1D4FB94F007E463B /* Appartment+CoreDataProperties.swift in Sources */,
+				69A2BA861D4FAB87007E463B /* Model.xcdatamodeld in Sources */,
+				69A2BA911D4FBA0B007E463B /* CoreDataHelper.swift in Sources */,
 				69A2BA4E1D4F438D007E463B /* ViewController.swift in Sources */,
 				69A2BA4C1D4F438D007E463B /* AppDelegate.swift in Sources */,
+				69A2BA8C1D4FB94F007E463B /* Cities.swift in Sources */,
+				69A2BA8B1D4FB94F007E463B /* Cities+CoreDataProperties.swift in Sources */,
 				69A2BA831D4F6DF4007E463B /* appartmentTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -498,6 +539,7 @@
 				69A2BA721D4F438D007E463B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		69A2BA731D4F438D007E463B /* Build configuration list for PBXNativeTarget "rest-tripTests" */ = {
 			isa = XCConfigurationList;
@@ -506,6 +548,7 @@
 				69A2BA751D4F438D007E463B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		69A2BA761D4F438D007E463B /* Build configuration list for PBXNativeTarget "rest-tripUITests" */ = {
 			isa = XCConfigurationList;
@@ -514,8 +557,22 @@
 				69A2BA781D4F438D007E463B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		69A2BA841D4FAB87007E463B /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				69A2BA851D4FAB87007E463B /* Model.xcdatamodel */,
+			);
+			currentVersion = 69A2BA851D4FAB87007E463B /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 69A2BA401D4F438D007E463B /* Project object */;
 }

@@ -15,7 +15,22 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-        // Override point for customization after application launch.
+
+
+//Adds some info to core data
+//        let city  = Cities()
+//        city.name = "Алушта"
+//        
+//        let appartment = Appartment()
+//        appartment.adress = "Some street number 5"
+//        appartment.price = 123
+//        appartment.city = city
+//        
+//        CoreDataHelper.instance.save()
+//
+//        let appartments = Appartment.allAppartments()
+//        print(appartments.count)
+//        
         return true
     }
 

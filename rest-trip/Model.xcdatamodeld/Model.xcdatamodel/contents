@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="9525" systemVersion="14F1713" minimumToolsVersion="Xcode 7.0">
+    <entity name="Appartment" representedClassName="Appartment" syncable="YES">
+        <attribute name="adress" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="price" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="thumb" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="city" maxCount="1" deletionRule="Nullify" destinationEntity="Cities" inverseName="cities" inverseEntity="Cities" syncable="YES"/>
+    </entity>
+    <entity name="Cities" representedClassName="Cities" syncable="YES">
+        <attribute name="name" attributeType="String" syncable="YES"/>
+        <relationship name="cities" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="Appartment" inverseName="city" inverseEntity="Appartment" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Appartment" positionX="-315" positionY="35" width="128" height="103"/>
+        <element name="Cities" positionX="-36" positionY="45" width="128" height="73"/>
+    </elements>
+</model>

@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Navigation Controller-->
@@ -34,22 +35,36 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6P9-os-Jdu">
-                                <rect key="frame" x="181" y="210" width="42" height="30"/>
-                                <state key="normal" title="About"/>
-                                <connections>
-                                    <segue destination="YOg-R6-Dcl" kind="show" id="cXF-bh-d6V"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ylH-Uf-t4p">
-                                <rect key="frame" x="142" y="155" width="131" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ylH-Uf-t4p">
+                                <rect key="frame" x="142" y="153" width="131" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="131" id="dhy-yT-K2m"/>
+                                </constraints>
                                 <state key="normal" title="Show appartments"/>
                                 <connections>
                                     <segue destination="eSy-84-5Ac" kind="show" id="sFx-ht-tCw"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6P9-os-Jdu">
+                                <rect key="frame" x="186" y="210" width="42" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="42" id="sCq-GD-JoW"/>
+                                </constraints>
+                                <state key="normal" title="About"/>
+                                <connections>
+                                    <segue destination="YOg-R6-Dcl" kind="show" id="cXF-bh-d6V"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="6P9-os-Jdu" secondAttribute="trailing" constant="166" id="6OU-Kz-ztO"/>
+                            <constraint firstItem="6P9-os-Jdu" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="166" id="LdJ-g4-zS8"/>
+                            <constraint firstItem="ylH-Uf-t4p" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="122" id="PK9-e0-19B"/>
+                            <constraint firstItem="6P9-os-Jdu" firstAttribute="top" secondItem="ylH-Uf-t4p" secondAttribute="bottom" constant="27" id="RGK-sp-RQG"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ylH-Uf-t4p" secondAttribute="trailing" constant="121" id="jGG-QW-Pbm"/>
+                            <constraint firstItem="ylH-Uf-t4p" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="89" id="kcx-cO-2gW"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Welcome to rest-trip" id="WVQ-CA-mq8"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
@@ -100,22 +115,41 @@
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Adress" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WXc-RV-goa">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Adress" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WXc-RV-goa">
                                                     <rect key="frame" x="23" y="11" width="197" height="21"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="197" id="gyr-Mc-fxw"/>
+                                                    </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zkl-3g-CkG">
-                                                    <rect key="frame" x="314" y="0.0" width="59" height="48"/>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="zkl-3g-CkG">
+                                                    <rect key="frame" x="314" y="-2" width="59" height="48"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="59" id="Eb9-W2-foc"/>
+                                                        <constraint firstAttribute="height" constant="48" id="mGy-w6-Hl0"/>
+                                                    </constraints>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Price" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pw6-fi-uiG">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Price" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pw6-fi-uiG">
                                                     <rect key="frame" x="228" y="11" width="78" height="21"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="78" id="FGS-sR-Nql"/>
+                                                    </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
+                                            <constraints>
+                                                <constraint firstItem="WXc-RV-goa" firstAttribute="leading" secondItem="R1u-Yc-r0w" secondAttribute="leadingMargin" constant="15" id="1df-TF-Ygb"/>
+                                                <constraint firstItem="zkl-3g-CkG" firstAttribute="leading" secondItem="Pw6-fi-uiG" secondAttribute="trailing" constant="8" id="E1p-Jp-xSo"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="zkl-3g-CkG" secondAttribute="trailing" constant="33" id="Ha7-rF-sEm"/>
+                                                <constraint firstItem="zkl-3g-CkG" firstAttribute="top" secondItem="R1u-Yc-r0w" secondAttribute="topMargin" constant="-10" id="Wuk-e2-4pn"/>
+                                                <constraint firstItem="Pw6-fi-uiG" firstAttribute="leading" secondItem="WXc-RV-goa" secondAttribute="trailing" constant="8" id="Yzc-9h-4ft"/>
+                                                <constraint firstItem="WXc-RV-goa" firstAttribute="top" secondItem="R1u-Yc-r0w" secondAttribute="topMargin" constant="3" id="b5D-Hc-rce"/>
+                                                <constraint firstItem="Pw6-fi-uiG" firstAttribute="top" secondItem="R1u-Yc-r0w" secondAttribute="topMargin" constant="3" id="llf-Iu-xQg"/>
+                                            </constraints>
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="imageAppartment" destination="zkl-3g-CkG" id="epq-6K-Snh"/>
